@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nesumm-dev-db431-authRole",
+      "UnauthRoleArn": "arn:aws:iam::920373012366:role/amplify-nesumm-dev-db431-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::920373012366:role/amplify-nesumm-dev-db431-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-nesumm-dev-db431-deployment",
+      "UnauthRoleName": "amplify-nesumm-dev-db431-unauthRole",
+      "StackName": "amplify-nesumm-dev-db431",
+      "StackId": "arn:aws:cloudformation:us-east-1:920373012366:stack/amplify-nesumm-dev-db431/c0bd78f0-09c7-11f0-bbcd-12de80a8b827",
+      "AmplifyAppId": "d19oju450rzeiv"
+    },
+    "categories": {
+      "auth": {
+        "nesumm416d6a94": {}
+      }
+    }
+  }
+}
