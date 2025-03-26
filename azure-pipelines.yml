@@ -2,3 +2,28 @@ trigger:
   branches:
     include:
       - master
+
+pool:
+  vmImage: "ubuntu-latest"
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: "18.x"
+
+  - script: |
+      npm install
+      npm run build
+    displayName: "Instalar dependencias y construir la app"
+
+  - task: AWSCLI@1
+    inputs:
+      awsCredentials: "AWS-Service-Connection"
+      regionName: "us-east-1"
+      command: "s3"
+      arguments: "sync ./dist s3://tu-bucket-s3 --delete"
+    displayName: "Subir archivos a S3"
+
+  - script: |
+      aws cloudfront create-invalidation --distribution-id TU_ID_CLOUDFRONT --paths "/*"
+    displayName: "Invalidar caché de CloudFront"
