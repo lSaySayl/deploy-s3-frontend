@@ -7,7 +7,7 @@ function MainContent() {
             <Card title="AWS" content="Información de AWS" />
             <Card title="Devops" content="Información de Devops" />
             <Card title="Lambdas" content="Información de Lambdas" />
-            <Card title="Lambdas" content="Información de Lambdas" />
+            <Card title="Node" content="Información de Lambdas" />
         </main>
     );
 }
