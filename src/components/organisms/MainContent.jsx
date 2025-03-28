@@ -8,6 +8,7 @@ function MainContent() {
             <Card title="Devops" content="Información de Devops" />
             <Card title="Lambdas" content="Información de Lambdas" />
             <Card title="Node" content="Información de Lambdas" />
+            <Card title="Node" content="Información de Lambdas" />
         </main>
     );
 }
